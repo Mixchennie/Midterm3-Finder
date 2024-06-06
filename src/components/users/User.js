@@ -32,7 +32,10 @@ const User = () => {
       const storedSearch = JSON.parse(localStorage.getItem("currentSearch"));
       if (storedSearch) {
           setCurrentSearch(storedSearch);
+
       }
+      localStorage.removeItem("currentSearch");
+
       history.push("/")
     }
     useEffect(() => {

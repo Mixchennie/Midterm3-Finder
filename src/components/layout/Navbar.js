@@ -25,7 +25,7 @@ const Navbar = () => {
               <Link to="/about">About</Link>
             </li>
             <li>
-               <button  onClick={toggleTheme}>Toggle Theme</button>
+               <button  onClick={toggleTheme} style={{borderRadius: '5px', width: '50px'}}>{theme}</button>
             </li>
          </ul>
       </nav>
